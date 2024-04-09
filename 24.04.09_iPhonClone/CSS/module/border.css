@@ -1,0 +1,38 @@
+/* *.aside_second_container의 첫 번째 자식 select */
+body
+  > div:first-child
+  > div:first-child
+  > aside:first-child
+  > div
+  > div:nth-child(2)
+  > form:first-child
+  > select:first-child {
+  border: none;
+  border-radius: 7px;
+}
+
+/* *.aside_second_container의 첫 번째 자식 버튼 */
+body
+  > div:first-child
+  > div:first-child
+  > aside:first-child
+  > div
+  > div:nth-child(2)
+  > form:first-child
+  > input[type="button"] {
+  border: none;
+  border-radius: 7px;
+}
+
+/* *.first_section_footer의 첫 번째 자식 버튼 */
+body
+  > div:first-child
+  > div:first-child
+  > section
+  > div:first-child
+  > div:nth-child(2)
+  > div:first-child
+  > button {
+  border: none;
+  border-radius: 40px;
+}
