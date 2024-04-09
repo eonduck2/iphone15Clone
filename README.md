@@ -11,4 +11,3 @@
 ## 핵심 Branches 설명
 - **main**: superBranch에 의해 최종적으로 merging될 최상위 브랜치
 - **superBranch**: mainWorkspace를 통한 결과물이 1차적으로 merging될 상위 브랜치
-- **mainWorkspace**: 프로젝트의 작업이 진행될 메인 워크스페이스
