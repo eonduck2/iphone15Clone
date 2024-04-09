@@ -29,7 +29,7 @@
                   <option value="germany">독일</option>
                   <option value="england">영국</option>
                 </select>
-                <input type="button" value="Continue" />
+                <input type="button" value="Continue" class="test_button" />
                 <span><i class="fa-regular fa-x"></i></span>
               </form>
             </div>
@@ -56,12 +56,17 @@
         <!--* 스크롤 내렸을 때 나타날 숨겨진 메뉴바 -->
         <!-- 
           ! -> main_container 포지션 값 이용해야할 확률 높음
-          todo, !!!
+          todo(level_1), !!!
         -->
         <div class="hidden_menubar_wrapper">
           <div>
-            <div></div>
-            <div></div>
+            <div class="hidden_menubar_title"><span>iPhone 15 Pro</span></div>
+            <div class="hidden_menubar_menus">
+              <li>개요</li>
+              <li>안드로이드에서 갈아타기</li>
+              <li>제품 사양</li>
+              <button>구입하기</button>
+            </div>
           </div>
         </div>
         <!--* nav아래 제품 구매 유도 컨텐츠 -->
@@ -172,4 +177,5 @@
     src="https://kit.fontawesome.com/c22cf359ff.js"
     crossorigin="anonymous"
   ></script>
+  <script src="./JS/main.mjs"></script>
 </html>

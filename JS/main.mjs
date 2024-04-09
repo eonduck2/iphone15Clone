@@ -1,11 +1,5 @@
-import { test } from "./module/funcs.js";
+// if(window.scrollY >)
 
-console.log(test);
-
-const audio = document.querySelector("#audio");
-
-window.onload = () => {
-  audio.volume = 1;
+window.onwheel = () => {
+  console.log(window.screenY);
 };
-
-console.dir(audio);

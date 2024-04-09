@@ -24,6 +24,12 @@ body
   border-radius: 7px;
 }
 
+/* *hidden_menubar_menus 안에 버튼 */
+.hidden_menubar_menus > button {
+  border: none;
+  border-radius: 12px;
+}
+
 /* *.first_section_footer의 첫 번째 자식 버튼 */
 body
   > div:first-child

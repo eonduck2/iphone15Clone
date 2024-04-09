@@ -118,10 +118,48 @@ body > div:first-child > div:first-child > nav {
 
 /* *.hidden_menubar_wrapper */
 .hidden_menubar_wrapper {
+  display: flex;
+  justify-content: center;
   width: 100%;
-  height: 10%;
-  background-color: red;
+  height: 5%;
+  background-color: black;
+  display: none;
 }
+
+.hidden_menubar_wrapper > div:first-child {
+  display: flex;
+  width: 80%;
+  height: 100%;
+}
+
+.hidden_menubar_wrapper > div:first-child > div:first-child {
+  display: grid;
+  align-items: center;
+  width: 50%;
+}
+
+.hidden_menubar_wrapper > div:first-child > div:nth-child(2) {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 50%;
+  list-style-type: none;
+  background-color: black;
+}
+
+/* *상단 고정 메뉴바 li */
+.hidden_menubar_menus > li {
+  cursor: pointer;
+}
+
+/* *상단 고정 메뉴바 버튼 */
+.hidden_menubar_menus > button {
+  width: 70px;
+  height: 25px;
+  background-color: rgb(48, 112, 250);
+  cursor: pointer;
+}
+
 /* *nav_for_top_containing의 첫 번째 자식 div */
 body > div:first-child > div:first-child > nav > div:first-child {
   display: flex;
@@ -135,7 +173,7 @@ body > div:first-child > div:first-child > nav > div:first-child > li {
 }
 
 /* *div_for_captions */
-body > div:first-child > div:first-child > div {
+.div_for_captions {
   display: flex;
   justify-content: center;
   align-items: center;

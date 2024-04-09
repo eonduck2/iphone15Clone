@@ -28,6 +28,12 @@ body > div:first-child > div:first-child > nav > div:first-child > li {
   font-size: 12px;
 }
 
+/* *.hidden_menubar_menus 자식 버튼 */
+.hidden_menubar_menus > button {
+  color: white;
+  font-size: 12px;
+}
+
 /* * div_for_captions의 자식 span */
 body > div:first-child > div:first-child > div > span:first-child {
   font-weight: 530;
@@ -138,4 +144,25 @@ body
   color: white;
   font-size: 30px;
   font-weight: 600;
+}
+/* *.hidden_menubar_title > span:first-child */
+.hidden_menubar_wrapper > div:first-child > div:first-child > span:first-child {
+  color: rgb(214, 214, 214);
+  font-size: 22px;
+  font-weight: 600;
+}
+/* /* *hidden_menubar_menus > li:first-child */
+.hidden_menubar_wrapper > div:first-child > div:nth-child(2) > li:first-child {
+  color: gray;
+  font-size: 12px;
+}
+
+/* *hidden_menubar_menus > li (except to first li)*/
+.hidden_menubar_wrapper
+  > div:first-child
+  > div:nth-child(2)
+  > li:nth-child(n + 2) {
+  padding: 15px;
+  color: white;
+  font-size: 12px;
 }
