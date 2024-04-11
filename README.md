@@ -11,3 +11,7 @@
 ## 핵심 Branches 설명
 - **main**: superBranch에 의해 최종적으로 merging될 최상위 브랜치
 - **superBranch**: 기본 작업 환경이 될 브랜치
+
+## 미리보기
+<img src="https://github.com/eonduck2/iphon15Clone/assets/127479390/f61ccd3f-759c-4bbb-9633-f7edb1338e22" width="800" height="600" />
+<img src="https://github.com/eonduck2/iphon15Clone/assets/127479390/a0635b68-606d-461d-854c-1e7d49092bcc" width="800" height="600" />
