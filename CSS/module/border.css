@@ -42,3 +42,8 @@ body
   border: none;
   border-radius: 40px;
 }
+
+.second_section > div:first-child > div:nth-child(2) > div:first-child {
+  border: none;
+  border-radius: 20px;
+}

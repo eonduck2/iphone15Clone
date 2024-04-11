@@ -1,3 +1,8 @@
+:root {
+  --main-section-bg: black;
+  --main-section-second-bg: rgb(78, 78, 78);
+}
+
 html,
 body {
   width: 100%;
@@ -123,7 +128,7 @@ body > div:first-child > div:first-child > nav {
   width: 100%;
   height: 5%;
   background-color: black;
-  display: none;
+  visibility: hidden;
 }
 
 .hidden_menubar_wrapper > div:first-child {
@@ -202,7 +207,7 @@ body > div:first-child > div:first-child > section {
   width: 100%;
   /* ! height: 82% */
   height: 100%;
-  background-color: black;
+  background-color: var(--main-section-bg);
 }
 
 /* *.first_section_first_div의 첫 번째 자식 div */
@@ -277,7 +282,7 @@ body
 /* ! second section */
 /* *.second_section */
 .second_section {
-  background-color: gray;
+  background-color: var(--main-section-second-bg);
 }
 /* *second_section_first_div */
 .second_section > div:first-child {
@@ -299,8 +304,9 @@ body
 /* *.second_section_header의 첫 번째 자식 div */
 .second_section > div:first-child > div:first-child > div:first-child {
   display: flex;
-  width: 80%;
+  width: 90%;
   height: 30%;
+  margin-bottom: 20px;
 }
 
 .second_section
@@ -321,7 +327,7 @@ body
   > div:nth-child(2) {
   display: flex;
   justify-content: end;
-  align-items: center;
+  align-items: end;
   width: 50%;
   height: 100%;
 }
@@ -334,35 +340,73 @@ body
   height: 100%;
 }
 
+/* *.second_section_middle_contents */
 .second_section > div:first-child > div:nth-child(2) > div:first-child {
-  width: 80%;
-  height: 80%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 90%;
+  height: 90%;
   background-color: black;
 }
 
-.thrid_section {
+.second_section
+  > div:first-child
+  > div:nth-child(2)
+  > div:first-child
+  > div:first-child
+  > p:first-child {
+  height: 80%;
+  margin-left: 40px;
+  margin-top: 60px;
+  margin-bottom: 0px;
+}
+
+.second_section
+  > div:first-child
+  > div:nth-child(2)
+  > div:first-child
+  > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+}
+
+.second_section
+  > div:first-child
+  > div:nth-child(2)
+  > div:first-child
+  > div:nth-child(2)
+  > img {
+  width: 30%;
+  height: 80%;
+}
+
+.third_section {
   width: 100%;
   height: 100%;
 }
 
-.thrid_section > div:first-child {
+/* *.third_section_container */
+.third_section > div:first-child {
   width: 100%;
   height: 100%;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  background-color: black;
+  background-color: var(--main-section-bg);
 }
 
-.thrid_section > div:first-child > div:first-child {
+.third_section > div:first-child > div:first-child {
   display: flex;
   width: 80%;
   height: 20%;
   align-items: end;
+  margin-bottom: 20px;
 }
 
-.thrid_section > div:first-child > div:nth-child(2) {
+/* *third_section_second_content */
+.third_section > div:first-child > div:nth-child(2) {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -370,36 +414,42 @@ body
   height: 100%;
 }
 
-.thrid_section > div:first-child > div:nth-child(2) > div:first-child {
+.third_section > div:first-child > div:nth-child(2) > div:first-child {
   width: 60%;
   height: 100%;
-  background-color: gray;
+  background-color: black;
 }
 
-.thrid_section
+/* *.third_section_div_for_img */
+.third_section
   > div:first-child
   > div:nth-child(2)
   > div:first-child
   > div:first-child {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 80%;
-  background-color: rgb(167, 167, 167);
+  background-color: black;
 }
 
-.thrid_section
+.third_section
   > div:first-child
   > div:nth-child(2)
   > div:first-child
   > div:nth-child(2) {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: 20%;
-  background-color: black;
 }
 
+/* *.fourth_section */
 .fourth_section {
   width: 100%;
   height: 100%;
-  background-color: gray;
 }
 
 /* *.fourth_section_container */
@@ -410,17 +460,18 @@ body
   flex-direction: column;
   width: 100%;
   height: 100%;
-  background-color: gray;
+  background-color: rgb(78, 78, 78);
 }
 
 .fourth_section > div:first-child > div:first-child {
+  margin: 60px;
   display: flex;
   align-items: end;
   width: 80%;
   height: 10%;
 }
 
-/* *second_contents */
+/* *.fourth_section_second_contents */
 .fourth_section > div:first-child > div:nth-child(2) {
   display: flex;
   align-items: center;
@@ -431,25 +482,41 @@ body
 }
 
 .fourth_section > div:first-child > div:nth-child(2) > div:first-child {
-  display: flex;
-  flex-direction: column;
-  width: 60%;
+  width: 40%;
   height: 10%;
-  margin-bottom: 20px;
 }
 
 .fourth_section > div:first-child > div:nth-child(2) > div:nth-child(2) {
-  width: 60%;
+  width: 40%;
   height: 40%;
-  background-color: black;
+}
+
+.fourth_section
+  > div:first-child
+  > div:nth-child(2)
+  > div:nth-child(2)
+  > img:first-child {
+  width: 100%;
+  height: 100%;
 }
 
 .fourth_section > div:first-child > div:nth-child(2) > div:nth-child(3) {
   margin-top: 10px;
+  margin-bottom: 100px;
   display: flex;
   justify-content: center;
-  width: 60%;
+  width: 40%;
   height: 40%;
+}
+
+.fourth_section
+  > div:first-child
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div:first-child
+  > img:first-child {
+  width: 100%;
+  height: 100%;
 }
 
 .fourth_section
@@ -469,6 +536,16 @@ body
   > div:nth-child(2) {
   width: 50%;
   background-color: black;
+}
+
+.fourth_section
+  > div:first-child
+  > div:nth-child(2)
+  > div:nth-child(3)
+  > div:nth-child(2)
+  > img:first-child {
+  width: 100%;
+  height: 100%;
 }
 
 .fourth_section > div:first-child > div:nth-child(2) > div:nth-child(4) {
@@ -527,6 +604,7 @@ body
   height: 100%;
 }
 
+/* * fifth_section_container */
 .fifth_section > div:first-child {
   width: 100%;
   height: 100%;
@@ -537,12 +615,51 @@ body
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  box-sizing: border-box;
   width: 100%;
   height: 100%;
   background-color: black;
 }
 
 .fifth_section > div:first-child > div:first-child > div:first-child {
+  width: 80%;
+  height: 100%;
+  margin: 20px;
+  margin-top: 100px;
+}
+
+.fifth_section > div:first-child > div:first-child > div:nth-child(2) {
+  width: 80%;
+  height: 100%;
+  margin: 20px;
+}
+
+.fifth_section > div:first-child > div:first-child > div:nth-child(3) {
+  width: 100%;
+  height: 50%;
+  margin: 20px;
+}
+
+.fifth_section
+  > div:first-child
+  > div:first-child
+  > div:nth-child(3)
+  > img:first-child {
+  width: 80%;
+}
+
+.sixth_section {
+  width: 100%;
+  height: 100%;
+}
+
+.sixth_section > div:first-child {
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}
+
+/* .fifth_section > div:first-child > div:first-child > div:first-child {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -612,7 +729,6 @@ body
   background-color: black;
 }
 
-/* ! -- */
 .fifth_section > div:first-child > div:first-child > div:nth-child(5) {
   display: flex;
   justify-content: center;
@@ -665,4 +781,4 @@ body
   width: 20%;
   height: 70%;
   background-color: black;
-}
+} */

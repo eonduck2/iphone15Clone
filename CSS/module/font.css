@@ -1,3 +1,8 @@
+:root {
+  --main-font-color: white;
+  --main-categories-font-size: 2.5rem;
+}
+
 /* *aside 내부 p태그 */
 body
   > div:first-child
@@ -20,7 +25,7 @@ body
   > div:nth-child(2)
   > form:first-child
   > input[type="button"] {
-  color: white;
+  color: var(--main-font-color);
 }
 
 /* *nav 상단 메뉴바 li들 */
@@ -30,7 +35,7 @@ body > div:first-child > div:first-child > nav > div:first-child > li {
 
 /* *.hidden_menubar_menus 자식 버튼 */
 .hidden_menubar_menus > button {
-  color: white;
+  color: var(--main-font-color);
   font-size: 12px;
 }
 
@@ -66,7 +71,7 @@ body
   > div:first-child
   > button:first-child {
   font-size: 15px;
-  color: white;
+  color: var(--main-font-color);
 }
 
 /* *.first_section_footer의 첫 번째 자식 div의 첫 번째 자식 p태그 */
@@ -79,7 +84,7 @@ body
   > div:first-child
   > p {
   font-weight: 700;
-  color: white;
+  color: var(--main-font-color);
 }
 
 /* *second_section 내 div 내 폰트 */
@@ -90,7 +95,7 @@ body
   > div:first-child
   > span {
   color: rgb(187, 187, 187);
-  font-size: 30px;
+  font-size: var(--main-categories-font-size);
   font-weight: 600;
 }
 
@@ -101,18 +106,41 @@ body
   > div:nth-child(2)
   > span {
   font-size: 17px;
-  color: rgb(43, 135, 255);
+  font-weight: 600;
+  color: rgb(4, 94, 212);
+  cursor: pointer;
 }
 
-.thrid_section > div:first-child > div:first-child > span:first-child {
+.second_section
+  > div:first-child
+  > div:nth-child(2)
+  > div:first-child
+  > div:first-child {
+  color: var(--main-font-color);
+  font-weight: 600;
+  font-size: 25px;
+}
+
+.third_section > div:first-child > div:first-child > span:first-child {
   color: rgb(187, 187, 187);
-  font-size: 30px;
+  font-size: var(--main-categories-font-size);
   font-weight: 600;
 }
 
-.fourth_section > div:first-child > div:first-child {
+.third_section
+  > div:first-child
+  > div:nth-child(2)
+  > div:first-child
+  > div:nth-child(2)
+  > p:first-child {
+  color: var(--main-font-color);
+  font-size: 12px;
+  font-weight: 600;
+}
+
+.fourth_section > div:first-child > div:first-child > span:first-child {
   color: rgb(187, 187, 187);
-  font-size: 30px;
+  font-size: var(--main-categories-font-size);
   font-weight: 600;
 }
 
@@ -120,18 +148,37 @@ body
   > div:first-child
   > div:nth-child(2)
   > div:first-child
-  > span:first-child,
-.fourth_section
-  > div:first-child
-  > div:nth-child(2)
-  > div:first-child
-  > span:nth-child(2) {
-  color: white;
-  font-size: 30px;
+  > p:first-child {
+  color: var(--main-font-color);
+  font-size: var(--main-categories-font-size);
   font-weight: 600;
 }
 
-.fifth_section
+.fourth_section > div:first-child > div:nth-child(2) > div:first-child {
+  color: var(--main-font-color);
+  font-size: 50px;
+  font-weight: 600;
+  margin-bottom: 70px;
+}
+
+.fifth_section > div:first-child > div:first-child > div:first-child {
+  color: var(--main-font-color);
+  font-size: 70px;
+  font-weight: 600;
+}
+
+.fifth_section > div:first-child > div:first-child > div:nth-child(2) {
+  color: rgb(187, 187, 187);
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* .fifth_section > div:first-child > div:first-child > div:nth-child(3) {
+  color: rgb(187, 187, 187);
+  font-weight: 600; */
+}
+
+/* .fifth_section
   > div:first-child
   > div:first-child
   > div:nth-child(3)
@@ -141,28 +188,30 @@ body
   > div:first-child
   > div:nth-child(3)
   > span:nth-child(3) {
-  color: white;
+  color: var(--main-font-color);
   font-size: 30px;
   font-weight: 600;
-}
+} */
 /* *.hidden_menubar_title > span:first-child */
-.hidden_menubar_wrapper > div:first-child > div:first-child > span:first-child {
+/* .hidden_menubar_wrapper > div:first-child > div:first-child > span:first-child {
   color: rgb(214, 214, 214);
   font-size: 22px;
   font-weight: 600;
-}
-/* /* *hidden_menubar_menus > li:first-child */
-.hidden_menubar_wrapper > div:first-child > div:nth-child(2) > li:first-child {
+} */
+/* 
+
+/* *hidden_menubar_menus > li:first-child */
+/* .hidden_menubar_wrapper > div:first-child > div:nth-child(2) > li:first-child {
   color: gray;
   font-size: 12px;
-}
+} */
 
 /* *hidden_menubar_menus > li (except to first li)*/
-.hidden_menubar_wrapper
+/* .hidden_menubar_wrapper
   > div:first-child
   > div:nth-child(2)
   > li:nth-child(n + 2) {
   padding: 15px;
-  color: white;
+  color: var(--main-font-color);
   font-size: 12px;
-}
+} */
