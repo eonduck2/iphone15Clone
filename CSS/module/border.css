@@ -1,3 +1,17 @@
+.div_for_hr {
+  text-align: center;
+  background-color: black;
+}
+
+hr {
+  background-color: gray;
+  display: inline-block;
+  justify-content: center;
+  width: 60%;
+  height: 1px;
+  border: none;
+}
+
 /* *.aside_second_container의 첫 번째 자식 select */
 body
   > div:first-child
@@ -46,4 +60,24 @@ body
 .second_section > div:first-child > div:nth-child(2) > div:first-child {
   border: none;
   border-radius: 20px;
+}
+
+.starrail_container > img {
+  border: none;
+  border-radius: 14px;
+}
+
+.button_for_footer {
+  border: none;
+  border-radius: 22px;
+}
+
+.button_for_eleventh_lists {
+  background-color: black;
+  border: 1px white solid;
+  border-radius: 20px;
+  color: white;
+  width: 100px;
+  height: 35px;
+  font-weight: 600;
 }
