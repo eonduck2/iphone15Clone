@@ -119,7 +119,7 @@ body
   > div:first-child {
   color: var(--main-font-color);
   font-weight: 600;
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .third_section > div:first-child > div:first-child > span:first-child {
