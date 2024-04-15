@@ -317,3 +317,9 @@ body
 .class_for_line_height40 {
   line-height: 40px;
 }
+
+.twelfth_section_container > div:first-child {
+  font-size: 70px;
+  color: var(--main-font-color);
+  font-weight: 600;
+}
